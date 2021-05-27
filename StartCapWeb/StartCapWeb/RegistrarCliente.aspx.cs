@@ -11,7 +11,9 @@ namespace StartCapWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string[] bebidas = { "Capuccino", "Mocachino", "Vainilla", "Expreso" };
+            BebidaDDL.DataSource = bebidas;
+            BebidaDDL.DataBind();
         }
     }
 }
